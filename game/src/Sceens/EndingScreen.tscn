@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/UserInterface/EndingButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/ending1_background.png" type="Texture" id=2]
+[ext_resource path="res://src/UserInterface/PlayAgainButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/exitbt.png" type="Texture" id=4]
+[ext_resource path="res://assets/restartbarbt.png" type="Texture" id=5]
+[ext_resource path="res://src/UserInterface/PlayAgainButton.gd" type="Script" id=6]
+
+[node name="EndingScreen" type="Control"]
+anchor_right = 0.667
+anchor_bottom = 0.667
+margin_right = -0.640137
+margin_bottom = -0.359985
+rect_min_size = Vector2( 1280, 720 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackExample" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EndingButton" parent="." instance=ExtResource( 1 )]
+margin_left = 0.0
+margin_top = -157.92
+margin_right = 222.0
+margin_bottom = -60.92
+text = ""
+icon = ExtResource( 4 )
+flat = true
+
+[node name="PlayAgainButton" parent="." instance=ExtResource( 3 )]
+margin_left = -222.0
+margin_top = -157.92
+margin_right = 0.0
+margin_bottom = -60.92
+text = ""
+icon = ExtResource( 5 )
+flat = true
+script = ExtResource( 6 )
