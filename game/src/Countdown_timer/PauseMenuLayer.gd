@@ -25,10 +25,10 @@ func _on_Resumebtn_pressed():
 
 
 func _on_Exitbtn_button_up():
-	get_tree().change_scene("res://src/Countdown_timer/QuitAsk.tscn")
+	get_tree().quit()
 
 func _on_Restartbtn_button_up():
-	get_tree().change_scene("res://src/Countdown_timer/RestartAsk.tscn")
+	get_tree().change_scene("res://src/Screens/MainScreen.tscn")
 
 
 
